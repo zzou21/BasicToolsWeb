@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Tools</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  </head>
+
+  <body>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+
+        <a class="site-title" href="{{ '/' | relative_url }}" >Basic Tools</a>
+
+        <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main">
+
+          <a class="page-link" href="{{ '/' | relative_url }}">Home</a>
+          <a class="page-link" href="{{ '/about/' | relative_url }}">About and Contact</a>
+          <a class="page-link" href="{{ '/documentation/' | relative_url }}">Documentation</a>
+
+          <!-- <div class="nav-dropdown">
+            <a class="nav-link" href="{{ '/tools/' | relative_url }}">Tools</a>
+            <div class="dropdown-menu">
+              <a href="{{ '/tools/tool-one/' | relative_url }}">Tool One</a>
+              <a href="{{ '/tools/tool-two/' | relative_url }}">Tool Two</a>
+              <a href="{{ '/tools/tool-three/' | relative_url }}">Tool Three</a>
+            </div>
+          </div> -->
+
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="wrapper">
+        <div class="footer-inner">
+          <div class="footer-links">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/about/' | relative_url }}">About</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+
+      // Mark the current page link as active
+      const currentPath = window.location.pathname;
+      document.querySelectorAll('.site-nav .page-link').forEach(function(link) {
+        if (link.getAttribute('href') === currentPath) {
+          link.classList.add('active');
+        }
+      });
+    </script>
+
+  </body>
+</html>
