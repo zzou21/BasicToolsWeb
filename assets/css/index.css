@@ -3,6 +3,7 @@
 .download-section {
   margin: 2rem 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
+  padding-top: 0;
 }
 
 .download-section h3 {
@@ -14,8 +15,8 @@
 
 .download-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 4px;
 }
 
 .download-btn {
@@ -28,6 +29,7 @@
   text-decoration: none;
   background: #fdfdfd;
   transition: border-color 0.15s, background 0.15s;
+  padding: 5px 5px;
 }
 
 .download-btn:hover {
@@ -58,9 +60,12 @@
 /* ------------ */
 
 
+.download-fineprint{
+  font-size: 11px;
+}
 
 /* setting for the version description underneath the "current version" */
 .version-description{
   font-size: 14px;
-  font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 0;
 }
