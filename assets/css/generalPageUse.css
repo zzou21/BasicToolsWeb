@@ -1,10 +1,12 @@
-.about-section {
+/* general purpose CSS for pages throughout this website, especially for words and titles. */
+
+.section {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.about-label {
+.label {
   font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -12,19 +14,19 @@
   opacity: 0.85;
 }
 
-.about-body {
+.body {
   font-size: 13px;
   line-height: 1.7;
   color: var(--text-muted);
 }
 
-.about-body-subtitle{
+.body-subtitle{
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-muted);
 }
 
-.about-body-content{
+.body-content{
   font-size: 13px;
   line-height: 1.5;
   color: var(--text-muted);

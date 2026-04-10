@@ -1,3 +1,5 @@
+/* CSS used mostly for the main home page. index.html */
+
 p {
   line-height: 1.2;
 }
@@ -64,11 +66,61 @@ p {
 
 
 .download-fineprint{
-  font-size: 11px;
+  font-size: 13px;
 }
 
 /* setting for the version description underneath the "current version" */
 .version-description{
   font-size: 14px;
   padding-bottom: 0;
+}
+
+
+
+/* general page use CSS: */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.body {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.body-subtitle{
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.body-content{
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+
+/* setting for tool buttons, like the homepage button */
+.tool-btn {
+  width: 30%;
+  padding: 0;
+  line-height: 2;
+  text-align: center;  
+}
+
+/* setting for the version description underneath the "current version" */
+.version-description{
+  font-size: 14px;
 }
