@@ -32,18 +32,144 @@ description: Home
     </a>
   </div>
   <br>
-  <p class="body">"I use Mac but not sure whether I should download the Apple Silicon or Intel version?" Read <a href="{{ '/MacChipVersion/' | relative_url }}" target="_blank" rel="noopener noreferrer">here</a>.</p>
 
-  <p class="body">To install <i>Basic Tools</i>, your computer needs to have at least 400 MB of storage space. Because <i>Basic Tools</i> uses Electron, it is not a small app (see <a href="https://www.electronjs.org/docs/latest/why-electron#stability-security-performance" target="_blank" rel="noopener noreferrer">why</a>) and will take around 200-370-ish MB of your space. The benefit is that <i>Basic Tools</i> runs completely locally without internet connection, providing security, digital privacy, and a way to not rely everything on internet-based or AI-based tools.</p>
-  <p class="body">Because <i>Basic Tools</i> runs locally and isolated from the interne, your app cannot detect newly released updates. To keep up-to-date and enjoy the latest version of <i>Basic Tools</i>, please subscribe to this mailing list <a href="https://docs.google.com/forms/d/e/1FAIpQLSesO0uIdjOYfzeySghuMrrOr9-MQl6gm77NbhMGRJwWzHcXpg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer"> here</a>.</p>
+  <p class="body">To install <i>Basic Tools</i>, your computer needs at least 400 MB of space. Since <i>Basic Tools</i> uses Electron, it is not a small app (see <a href="https://www.electronjs.org/docs/latest/why-electron#stability-security-performance" target="_blank" rel="noopener noreferrer">why</a>) and will take around 200-370-ish MB of your space. The benefit is that <i>Basic Tools</i> runs completely locally without internet connection, providing security, digital privacy, and a way to not rely everything on internet-based or AI-based tools.</p>
+  <p class="body">Because <i>Basic Tools</i> runs locally and is isolated from the internet, your app cannot detect newly released updates. To keep up-to-date and enjoy the latest version of <i>Basic Tools</i>, please subscribe to our mailing list <a href="https://docs.google.com/forms/d/e/1FAIpQLSesO0uIdjOYfzeySghuMrrOr9-MQl6gm77NbhMGRJwWzHcXpg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer"> here</a>.</p>
 
-  <p class="body">Want to contribute your ideas/suggestiosn to <i>Basic Tools</i>? Visit the "<a href="{{ '/forum/' | relative_url }}" target="_blank" rel="noopener noreferrer"">Forum</a>" page on the menu bar above and share in your thoughts!</p>
+  <p class="body">Want to contribute your ideas to <i>Basic Tools</i>? Visit the "<a href="{{ '/forum/' | relative_url }}" target="_blank" rel="noopener noreferrer"">Forum</a>" page on the menu bar above and share your thoughts.</p>
+
+  <details class="details">
+    <summary>I use Mac but not sure whether I need the Apple Silicon or Intel version?</summary>
+    <div class="details-body">
+      <p class="body">There are two types of Mac computers, delineated by which processor they use. One uses Apple Silicon and the other Intel. You have to download the <i>Basic Tools</i> that matches your Mac's processor.</p>
+
+      <p class="label">To determine which Mac processor you have:</p>
+
+      <p class="body">Step 1: Go to the  icon on the top left corner of your MacBook. Then, in the droptown list, click on "About This Mac".</p>
+      <img src="{{ "/assets/images/photosForMacDistinguishChip/MacDetermineProcessorStep1.jpg" | relative_url }}" alt="Step one to find which Mac processor you have" width="400" height="400">
+      <br>
+      <br>
+      <p class="body">Step 2: After clicking on "About This Mac" you should see a window that looks something like this:</p>
+
+      <img src="{{ "/assets/images/photosForMacDistinguishChip/MacDetermineProcessorSilicon.png" | relative_url }}" alt="Image for mac with silicon chip" width="300" height="400">
+
+      <p class="body">This image shows a MacBook that has an Apple Silicon chip. You can tell because it says "Apple M4". You might have an M1, M2, M3, or another Mx number. If it says "Apple" and has "M" + a number, it is an Apple Silicon chip.</p>
+
+      <p class="body">If, instead, your screen shows you something like this:</p>
+      <img src="{{ "/assets/images/photosForMacDistinguishChip/MacDetermineProcessorIntel.jpg" | relative_url }}" alt="Image for mac with Intel chip" width="1000" height="80" >
+      <p class="body">Then it means you have an Intel chip. The exact wording on your screen might not be the same as the image above, but if it has the word "Intel" in it somewhere, then you have an Intel MacBook.</p>
+
+      <p class="body">After determining which processor your MacBook has, you can return to the <a href="{{ '/' | relative_url }}">home screen</a> to download the Mac version of <i>Basic Tools</i> that fits you.</p>
+
+      <a href="{{ '/MacChipVersion/' | relative_url }}" target="_blank" rel="noopener noreferrer">Open This Page in Another Window</a>
+    </div>
+  </details>
+
+  <details class="details">
+  <summary>Mac users (either Apple Silicon or Intel): how to use the .dmg file provided above</summary>
+    <div class="details-body">
+      <p class="body">This is the same download process as downloading any other Mac applications from the internet. If you know what the previous sentence is talking about, you do not need to read this.
+      <p class="label">Mac Download and Post-Download Clean Up</p>
+
+      <p class="label">The .dmg File</p>
+      <p class="body">For Mac computers, the way to download an app from the internet (and not from the App Store) is that the provider of your app (me) lets you download a .dmg file, which is Apple's proprietary disc format to provide security during software distribution. When you click on your .dmg file to download <i>Basic Tools</i>, the .dmg file will create a virtual disk (which you can imagine it as plugging in a USB drive), and both will appear on your Desktop (or wherever on your computer that you downloaded them to), unless you delete them explicitly.
+      </p>
+
+      <p class="body">When you first download <i>Basic Tools</i>, you should see something like this showing up in the directory that you have downloaded it to:</p>
+
+      <img src="{{ "/assets/images/macPostDownloadCleanUp/dmgFile.png" | relative_url }}" alt=".dmg file" width="400" height="400">
+
+      <p class="body">After you've clicked on the above .dmg file, it should have created a disk that looks like this in your directory:</p>
+
+      <img src="{{ "assets/images/macPostDownloadCleanUp/virtualDisk.png" | relative_url }}" alt="virtual disk file" width="400" height="400">
+
+      <p class="body">Clicking on the disk above should have opened a window that prompted you to drag the <i>Basic Tools</i> icon into your "Applications" folder. Doing so will complete the installation process.</p>
+      <img src="{{ "assets/images/macPostDownloadCleanUp/downloadDrag.png" | relative_url }}" alt="drag icon to download" width="400" height="400">
+
+      <p class="body">After installing <i>Basic Tools</i>, you can eject the disk by right clicking on its icon:</p>
+      <img src="{{ "assets/images/macPostDownloadCleanUp/ejectVirtualDisk.png" | relative_url }}" alt="eject virtual disk file" width="400" height="400">
+
+      <p class="body">You can also delete the .dmg file by dragging its icon into Trash.</p>
+
+      <a href="{{ '/MacPostDownloadCleanup/' | relative_url }}" target="_blank" rel="noopener noreferrer">Open Mac Download Instructions on a separate page</a></p>
+
+    </div>
+  </details>
+
+  <details class="details">
+    <summary>Windows users: please read this download instruction before downloading the app</summary>
+    <div class="details-body">
+
+    <p class="label">Windows Download Instructions</p>
+
+    <p class="body">If you are familiar with downloading a Windows app via a .zip file, unzipping it, finding the Application .exe file in it, creating a shortcut for it on your Desktop, and not deleting the unzipped folder, then you do not need to read this page.</p>
+
+    <p class="label">Why This?</p>
+    <p class="body">I'm adding this instruction page for Windows users is that <i>Basic Tools</i> hasn't been code signed (what is "<a href="https://en.wikipedia.org/wiki/Code_signing" target="_blank" rel="noopener noreferrer">code sign</a>"?) with Windows yet, meaning, if you download the app directly, it will trigger your Windows firewall and reject the app. This is why when you download the app on the homescreen, it gives you a .zip file that contains the app (along with a bunch of other files that we don't need to ,worry about).
+    <br>
+    <br>
+    The reason why <i>Basic Tools</i> hasn't been code signed yet (which can make the downloading process much smoother and this instruction page unnecessary) is that it costs a lot of money to code sign with Windows. The cheapest one I found is $129 a year. Capitalists (same with Apple). I will, of course, code sign it as soon as I find enough funding to do so to ensure further security and better user experience. The cost behind code signing is one (sometimes major) hidden cost in software development that is a pain for open-source and non-commercial softwares. If you are interested in supporting <i>Basic Tools</i>, please (please) reach out to me on the "<a href="{{ /contact/ | relative_url }}" target="_blank" rel="noopener noreferrer">about</a>" page (thanks!).</p>
+
+    <p class="label">To smoothly install <i>Basic Tools</i> on Windows:</p>
+    <p class="label">Step 1:</p>
+    <p class="body">When you click on the Windows download button on the <i>Basic Tools</i> home screen, you should've received a .zip file in your "Download" folder (or whichever folder that you set your Windows machine to receive downloads to). Right click on it to unzip it (some machines might call this process "Extract All"). If you see that your zipped folder has the words "</p>:
+
+    <img src="{{ "assets/images/winInstallSteps/winStep1.jpg" | relative_url }}" alt="win download step 1" width="400" height="400">
+
+    <p class="label">Step 2:</p>
+    <p class="body">After unzipping (or extracting) the zip folder, you should see a folder of the same name (but with the "Type" just saying "Folder" and not "Compressed (zipped) Folder"). Enter that unzipped folder.</p>
+
+    <img src="{{ "assets/images/winInstallSteps/winStep2.jpg" | relative_url }}" alt="win download step 2" width="500" height="400">
+
+    <p class="label">Step 3:</p>
+    <p class="body">After you enter the unzipped folder, you should see quite a few files. We do not need to worry about most of them. You just need to find the one that says "BasicTools," with <i>Basic Tools</i>' icon, and has the word "Application" under the document "Type" column:</p>
+
+    <img src="{{ "assets/images/winInstallSteps/winStep3.jpg" | relative_url }}" alt="win download step 3" width="400" height="400">
+
+    <p class="label">Step 4:</p>
+    <p class="body">Right click on the BasicTools application file to show the different options. For some machine, you will see a "Send to" button right away; for some, you need to click on "Show more options" to get to it:</p>
+
+    <img src="{{ "assets/images/winInstallSteps/winStep4.jpg" | relative_url }}" alt="win download step 4" width="400" height="400">
+
+    <p class="label">Step 5:</p>
+    <p class="body">Click on "Show more options" to find "Send to", and then click on the option "Desktop (create shortcut)":</p>
+
+    <img src="{{ "assets/images/winInstallSteps/winStep5.jpg" | relative_url }}" alt="win download step 5" width="500" height="400">
+
+    <p class="label">Step 6:</p>
+    <p class="body">After clicking on "Desktop (create shortcut)," you should see the <i>Basic Tools</i> icon showing up on your desktop. Now, in the future, you can easily access it from there. But, if this is your first time opening <i>Basic Tools</i> or that you have downloaded a new version of it, there's an extra step:</p>
+    <img src="{{ "assets/images/winInstallSteps/winStep6.jpg" | relative_url }}" alt="win download step 6" width="600" height="400">
+
+
+    <p class="label">Step 7:</p>
+    <p class="body">The first time you open <i>Basic Tools</i>, your Windows machine will give you a blue warning window saying: "Windows protected your PC" (because I didn't pay over a hundred dollars for code signing). You can click on "More info" and then "Run Anyway." Yuo only need to do this step once when you first installed the app.</p>
+    <img src="{{ "assets/images/winInstallSteps/winStep7.jpg" | relative_url }}" alt="win download step 7" width="400" height="400">
+    <img src="{{ "assets/images/winInstallSteps/winStep8.jpg" | relative_url }}" alt="win download step 8" width="400" height="400">
+
+    <p class="label">In the future:</p>
+    <p class="body">You will still have the <i>Basic Tools</i> folder in your Download folder (or whichever folder you unzipped the zip file into). Please do not delete the unzipped folder (you can delete the zipped file), since it contains the code for <i>Basic Tools</i> in order for the shortcut that you just added onto your Desktop to work.</p>
+
+    <a href=" {{ '/WindowsDownloadInstructions/' | relative_url }}" target="_blank" rel="noopener noreferrer">Open Windows Installation Instruction in Another Window.</a>
+    </div>
+  </details>
+
+
+
 </div>
 
 <hr>
 
 <br>
-<p class="body"><b>Mac users (either Apple Silicon or Intel)</b>: please read this download instruction for how to use the .dmg file to install <i>Basic Tools</i>: <a href="{{ '/MacPostDownloadCleanup/' | relative_url }}" target="_blank" rel="noopener noreferrer">Mac Download Instructions.</a> This is the same download process as downloading any other Mac applications from the internet. If you know what the previous sentence is talking about, you do not need to read this.</p>
 
-<p class="body"><b>Windows users</b>: please read this download instruction that is needed (just for this current version) before downloading the app: <a href=" {{ '/WindowsDownloadInstructions/' | relative_url }}" target="_blank" rel="noopener noreferrer">Installation instructions for Windows.</a></p>
 
+<script>
+  // to power the dropdown menus
+  document.querySelectorAll('.details').forEach(el => {
+    el.addEventListener('toggle', () => {
+      const body = el.querySelector('.details-body');
+      if (el.open) {
+        body.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200 });
+      }
+    });
+  });
+</script>

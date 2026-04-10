@@ -124,3 +124,54 @@ p {
 .version-description{
   font-size: 14px;
 }
+
+
+/* dropdown menus */
+.details {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  margin: 1em 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.details summary {
+  padding: 0.75em 1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f8f8f8;
+  list-style: none; /* remove default triangle on some browsers */
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  user-select: none;
+}
+
+/* Remove the default marker in webkit */
+.details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom arrow icon */
+.details summary::before {
+  content: "▶";
+  font-size: 15px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.details summary:hover {
+  background-color: #eeeeee;
+}
+
+.details .details-body {
+  padding: 1em 1.25em;
+  border-top: 1px solid #e8e8e8;
+  color: #111;
+  font-weight: normal;
+}
