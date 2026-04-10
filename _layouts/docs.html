@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<!-- format for the documentation page -->
+<link rel="stylesheet" href="{{ '/assets/css/docsDefault.css' | relative_url }}">
+
+<div class="docs-wrapper">
+  <aside class="docs-sidebar">
+    <nav>
+      <p class="sidebar-title">On this page</p>
+      <ul>
+        <li><a href="#getting-started">Getting started</a></li>
+        <li><a href="#SampleUseCases">Sample Use Cases</a></li>
+        <li><a href="#installation">Installation</a></li>
+            <li class="toc-sub"><a href="#mac">Mac</a></li>
+            <li class="toc-sub"><a href="#windows">Windows</a></li>
+        <li><a href="#current-tools">Current Tools</a></li>
+            <li class="toc-sub"><a href="#FileFinder">File Finder</a></li>
+            <li class="toc-sub"><a href="#ImageConverter">Image Converter</a></li>
+            <li class="toc-sub"><a href="#PDFMerger">PDF Merger</a></li>
+
+
+
+        <!-- <li><a href="#troubleshooting">Troubleshooting</a></li> -->
+      </ul>
+    </nav>
+  </aside>
+
+  <article class="docs-content">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </article>
+</div>
